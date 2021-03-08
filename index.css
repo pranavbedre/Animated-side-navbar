@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400px;
+  overflow-x: hidden;
+}
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  height: 30px;
+  width: 40px;
+  top: 30px;
+  right: 30px;
+}
+
+.line1 {
+  position: relative;
+  border-top: 3px solid black;
+  left: 6px;
+  top: 6px;
+  width: 25px;
+  height: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.line2 {
+  position: relative;
+  border-top: 3px solid black;
+  left: 6px;
+  top: 8px;
+  width: 25px;
+  height: 5px;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.line3 {
+  position: relative;
+  border-top: 3px solid black;
+  left: 6px;
+  top: 10px;
+  width: 25px;
+  height: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.line1-rotation {
+  transform: rotate(45deg) translate(5px, 4px);
+}
+
+.line2-opacity {
+  opacity: 0;
+}
+
+.line3-rotation {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+.navlinks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  width: 65%;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+.navlinks li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navlinks li {
+  list-style-type: none;
+  margin: 1.5em 1.5rem 0px 2rem;
+  cursor: pointer;
+  opacity: 1;
+  color: white;
+}
+
+.navlinks .about {
+  margin-top: 6rem;
+}
+
+.about-dropdown,
+.menu-dropdown,
+.services-dropdown,
+.book-dropdown {
+  margin: 0px 1em;
+}
+
+.navbar-toggle {
+  transform: translateX(0%);
+}
+
+.hide {
+  display: none;
+}
+
+i {
+  color: rgba(255, 255, 255, 0.541);
+  display: inline-block;
+  margin-left: 0.7rem;
+  transition: 0.3s ease-in-out;
+}
+
+.arrow-rotate {
+  transform: rotate(180deg);
+}
+
+.circle {
+  position: absolute;
+  content: "";
+  background: linear-gradient(
+    to bottom left,
+    rgb(153, 0, 255) 35%,
+    rgb(95, 26, 255)
+  );
+  width: 100%;
+  height: 100%;
+  clip-path: circle(0% at 100% 0%);
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
