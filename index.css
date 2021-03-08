@@ -65,7 +65,7 @@
   flex-direction: column;
   background: whitesmoke;
   width: 65%;
-  height: 100vh;
+  min-height: 100vh;
   position: absolute;
   left: 0px;
   top: 0%;
